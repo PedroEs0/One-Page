@@ -1,4 +1,5 @@
-/* Paleta basada en azul */
+
+/* Paleta de colores */
 :root {
   --azul-principal: #1E88E5;
   --azul-oscuro: #1565C0;
@@ -19,82 +20,119 @@ body {
   color: var(--texto-principal);
 }
 
-/* Banner */
-.banner {
-  background-color: var(--azul-principal);
-  color: white;
-  padding: 40px 20px;
-  text-align: left;
-}
-
-.titulo {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-.subtitulo {
-  font-size: 1.2em;
-  color: #e3f2fd;
-}
-
-/* Menú de navegación */
-nav {
+/* Panel lateral tipo overlay */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: var(--azul-oscuro);
+  padding-top: 60px; /* espacio para el header */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1001;
 }
 
-.menu {
-  list-style: none;
-  margin: 0;
+.sidebar a {
   padding: 10px 20px;
-  display: flex;
-  gap: 20px;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu a {
-  color: white;
   text-decoration: none;
-  padding: 8px 12px;
+  font-size: 18px;
+  color: white;
   display: block;
-  transition: background 0.3s;
 }
 
-.menu a:hover {
+.sidebar a:hover {
   background-color: var(--azul-claro);
   color: var(--texto-principal);
 }
 
-/* Submenú */
-.has-submenu .submenu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  top: 100%;
-  left: 0;
-  list-style: none;
-  min-width: 150px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Contenido principal */
+.main-content {
+  padding: 20px;
+  transition: filter 0.3s ease;
 }
 
-.has-submenu:hover .submenu {
-  display: block;
+/* Cabecera */
+.header {
+  background-color: var(--azul-principal);
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  position: relative;
+  z-index: 1002;
 }
 
-.submenu li a {
-  color: var(--azul-oscuro);
+/* Botón dentro de la cabecera */
+.toggle-btn {
+  font-size: 20px;
+  background: none;
+  color: white;
+  border: none;
   padding: 10px;
+  cursor: pointer;
 }
 
-.submenu li a:hover {
-  background-color: var(--azul-claro);
+/* Overlay */
+.sidebar.open {
+  transform: translateX(0);
 }
 
-/* Responsive opcional */
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-  }
+.main-content.dimmed {
+  filter: brightness(0.7);
+}
+
+.footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 40px 20px;
+  font-size: 0.95em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--gris-medio);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: var(--amarillo);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85em;
+  border-top: 1px solid #444;
+  padding-top: 10px;
 }

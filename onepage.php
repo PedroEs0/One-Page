@@ -2,80 +2,53 @@
 ?>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <title>One Page</title>
+  <meta charset="UTF-8">
+  <title>One Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styless.css">
 </head>
-
 <body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Banner con Fondo y Texto Izquierdo</title>
-        <link rel="stylesheet" href="styless.css">
-    </head>
+  <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; 
+      width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000;"></div>
 
-    <body>
-        <header class="banner">
-            <div class="texto">
-                <h1 class="titulo">One Page</h1>
-                <p class="subtitulo">Material de estudio sobre Plataformas Tecnológicas 2025-1</p>
-            </div>
-        </header>
-    </body>
+  <div class="header">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <span style="margin-left: 10px;">One Page</span>
+  </div>
 
-    <nav>
-        <ul class="menu">
-            <li><a href="onepage.php">Inicio</a></li>
+  <div class="sidebar" id="sidebar">
+    <a href="">Inicio</a>
+    <a href="so.php">Sistemas Operativos</a>
+    <a href="gprocess.php">Gestión de Procesos</a>
+    <a href="gmemory.php">Gestión de Memoria</a>
+    <a href="gstorage.php">Gestión de Almacenamiento</a>
+    <a href="aboutus.php">Nosotros</a>
+  </div>
 
-            <li class="has-submenu">
-                <a href="so.php">Sistemas operativos</a>
-                <ul class="submenu">
-                    <li><a href="so.php#windows">Windows</a></li>
-                    <li><a href="so.php#linux">Linux</a></li>
-                </ul>
-            </li>
+  <div class="main-content" id="main-content">
+    <h1>Contenido Principal</h1>
+    <p>Este sitio muestra el contenido de la materia Plataformas Tecnologicas 2025-1</p>
+  </div>
 
-            <li class="has-submenu">
-                <a href="gprocess.php">Gestión de procesos</a>
-                <ul class="submenu">
-                    <li><a href="gprocess.php#concepto">Concepto de proceso</a></li>
-                    <li><a href="gprocess.php#ciclo">Ciclo de vida</a></li>
-                    <li><a href="gprocess.php#planificadores">Planificadores de proceso</a></li>
-                    <li><a href="gprocess.php#hilos">Hilos de ejecución</a></li>
-                </ul>
-            </li>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const content = document.getElementById('main-content');
+      const overlay = document.getElementById('overlay');
 
-            <li class="has-submenu">
-                <a href="gmemory.php">Gestión de memoria</a>
-                <ul class="submenu">
-                    <li><a href="gmemory.php#principal">Memoria principal</a></li>
-                    <li><a href="gmemory.php#asignacion">Técnicas de asignación de memoria</a></li>
-                    <li><a href="gmemory.php#virtual">Memoria virtual</a></li>
-                </ul>
-            </li>
+      sidebar.classList.toggle('open');
+      content.classList.toggle('dimmed');
+      overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
+    }
 
-            <li class="has-submenu">
-                <a href="gstorage.php">Gestión de Almacenamiento</a>
-                <ul class="submenu">
-                    <li><a href="gstorage.php#jerarquia">Jerarquía de almacenamiento</a></li>
-                    <li><a href="gstorage.php#sistemas">Sistemas de archivos</a></li>
-                    <li><a href="gStorage.php#espacio">Administración de espacio</a></li>
-                </ul>
-            </li>
-            <li>class="has-submenu">
-                <a href="aboutus.php">Nosotros</a>
-            </li>
-        </ul>
-    </nav>
-    
-    <main>
-        <h2>Contenido Principal</h2>
-        <p>Este es un ejemplo de una página hecha completamente en PHP con un menú de navegación.</p>
-    </main>
-
+    document.getElementById('overlay').addEventListener('click', () => {
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('main-content').classList.remove('dimmed');
+      document.getElementById('overlay').style.display = 'none';
+    });
+  </script>
 </body>
 <footer class="footer">
         <div class="footer-container">
@@ -94,7 +67,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p><a href="#">Referencias</a></p>
+            <p><a href="ref.php">Referencias</a></p>
             <p>&copy; 2025 One Page. Todos los derechos reservados.</p>
         </div>
     </footer>
