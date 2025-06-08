@@ -1,12 +1,14 @@
-# One-Page
+# OnePage PHP
 
-Este es un proyecto en PHP que muestra una página web de una sola sección.
+Este es un proyecto web en PHP que consiste en una aplicación tipo "one-page", diseñada para manejar múltiples funcionalidades desde una sola página, con soporte para diferentes secciones y archivos auxiliares.
 
-## Estructura
+## 📁 Estructura del proyecto
 
-- `onepage.php`: archivo principal
-- `images/`: carpeta con imágenes
-- `styles.css`: estilos de la página
+- `onepage.php` – Página principal del sitio.
+- `aboutus.php` – Información sobre nosotros.
+- `so.php`, `gmemory.php`, `gprocess.php`, `gstorage.php` – Scripts auxiliares o secciones del proyecto.
+- `styl.css` – Estilos personalizados para la página.
+- `images/` – Carpeta con imágenes utilizadas en la web.
 
 ## Autor
 
