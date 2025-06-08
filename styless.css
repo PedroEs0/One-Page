@@ -1,0 +1,100 @@
+/* Paleta basada en azul */
+:root {
+  --azul-principal: #1E88E5;
+  --azul-oscuro: #1565C0;
+  --azul-claro: #BBDEFB;
+  --naranja: #FFA726;
+  --gris-medio: #757575;
+  --fondo-claro: #F5F7FA;
+  --texto-principal: #212121;
+  --verde: #43A047;
+  --amarillo: #FDD835;
+  --rojo: #E53935;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--fondo-claro);
+  color: var(--texto-principal);
+}
+
+/* Banner */
+.banner {
+  background-color: var(--azul-principal);
+  color: white;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.subtitulo {
+  font-size: 1.2em;
+  color: #e3f2fd;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: var(--azul-oscuro);
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: var(--azul-claro);
+  color: var(--texto-principal);
+}
+
+/* Submenú */
+.has-submenu .submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  color: var(--azul-oscuro);
+  padding: 10px;
+}
+
+.submenu li a:hover {
+  background-color: var(--azul-claro);
+}
+
+/* Responsive opcional */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+}

@@ -14,56 +14,59 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Banner con Fondo y Texto Izquierdo</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styless.css">
     </head>
 
     <body>
         <header class="banner">
             <div class="texto">
-                <h1 class="titulo">ChinGue</h1>
-                <p class="subtitulo">Material de estudio sobre Plataformas Tecnológicas</p>
+                <h1 class="titulo">One Page</h1>
+                <p class="subtitulo">Material de estudio sobre Plataformas Tecnológicas 2025-1</p>
             </div>
         </header>
     </body>
 
     <nav>
         <ul class="menu">
-            <li><a href="chingue.php">Inicio</a></li>
+            <li><a href="onepage.php">Inicio</a></li>
 
             <li class="has-submenu">
-                <a href="sistemas.php">Sistemas operativos</a>
+                <a href="so.php">Sistemas operativos</a>
                 <ul class="submenu">
-                    <li><a href="sistemas.php#windows">Windows</a></li>
-                    <li><a href="sistemas.php#linux">Linux</a></li>
+                    <li><a href="so.php#windows">Windows</a></li>
+                    <li><a href="so.php#linux">Linux</a></li>
                 </ul>
             </li>
 
             <li class="has-submenu">
-                <a href="procesos.php">Gestión de procesos</a>
+                <a href="gprocess.php">Gestión de procesos</a>
                 <ul class="submenu">
-                    <li><a href="procesos.php#concepto">Concepto de proceso</a></li>
-                    <li><a href="procesos.php#ciclo">Ciclo de vida</a></li>
-                    <li><a href="procesos.php#planificadores">Planificadores de proceso</a></li>
-                    <li><a href="procesos.php#hilos">Hilos de ejecución</a></li>
+                    <li><a href="gprocess.php#concepto">Concepto de proceso</a></li>
+                    <li><a href="gprocess.php#ciclo">Ciclo de vida</a></li>
+                    <li><a href="gprocess.php#planificadores">Planificadores de proceso</a></li>
+                    <li><a href="gprocess.php#hilos">Hilos de ejecución</a></li>
                 </ul>
             </li>
 
             <li class="has-submenu">
-                <a href="memoria.php">Gestión de memoria</a>
+                <a href="gmemory.php">Gestión de memoria</a>
                 <ul class="submenu">
-                    <li><a href="memoria.php#principal">Memoria principal</a></li>
-                    <li><a href="memoria.php#asignacion">Técnicas de asignación de memoria</a></li>
-                    <li><a href="memoria.php#virtual">Memoria virtual</a></li>
+                    <li><a href="gmemory.php#principal">Memoria principal</a></li>
+                    <li><a href="gmemory.php#asignacion">Técnicas de asignación de memoria</a></li>
+                    <li><a href="gmemory.php#virtual">Memoria virtual</a></li>
                 </ul>
             </li>
 
             <li class="has-submenu">
-                <a href="almacenamiento.php">Gestión de Almacenamiento</a>
+                <a href="gstorage.php">Gestión de Almacenamiento</a>
                 <ul class="submenu">
-                    <li><a href="almacenamiento.php#jerarquia">Jerarquía de almacenamiento</a></li>
-                    <li><a href="almacenamiento.php#sistemas">Sistemas de archivos</a></li>
-                    <li><a href="almacenamiento.php#espacio">Administración de espacio</a></li>
+                    <li><a href="gstorage.php#jerarquia">Jerarquía de almacenamiento</a></li>
+                    <li><a href="gstorage.php#sistemas">Sistemas de archivos</a></li>
+                    <li><a href="gStorage.php#espacio">Administración de espacio</a></li>
                 </ul>
+            </li>
+            <li>class="has-submenu">
+                <a href="aboutus.php">Nosotros</a>
             </li>
         </ul>
     </nav>
@@ -85,18 +88,14 @@
                 <h3>Redes Sociales</h3>
                 <ul>
                     <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
                     <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Sobre Nosotros</h3>
-                <p>Somos una empresa dedicada a proporcionar soluciones tecnológicas innovadoras.</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Ejemplo Inc. Todos los derechos reservados.</p>
+            <p><a href="#">Referencias</a></p>
+            <p>&copy; 2025 One Page. Todos los derechos reservados.</p>
         </div>
     </footer>
 </html>
