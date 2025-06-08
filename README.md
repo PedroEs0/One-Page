@@ -10,4 +10,4 @@ Este es un proyecto en PHP que muestra una página web de una sola sección.
 
 ## Autor
 
-PedroEsO
+PedroEs0
