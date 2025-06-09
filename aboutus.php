@@ -80,7 +80,6 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p><a href="ref.php" class="footer-title">Referencias</a></p>
       <p>&copy; 2025 One Page. Todos los derechos reservados.</p>
     </div>
   </footer>
