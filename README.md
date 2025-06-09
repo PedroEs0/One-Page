@@ -10,7 +10,7 @@ Este es un proyecto web en PHP que consiste en una aplicación tipo "one-page", 
 - `styl.css` — Estilos personalizados para la página.
 - `images/` — Carpeta con imágenes utilizadas en la web.
 - `docs/` — Carpeta con documentos esenciales.
-- `ref.php` — Referencias y pagina utilizadas.
+
 ## Autor
 
 PedroEs0
