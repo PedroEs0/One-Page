@@ -16,12 +16,27 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--fondo-claro);
   color: var(--texto-principal);
+  overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #1976d2;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #e3f2fd;
 }
 
 .main-content {
   padding: 20px;
   transition: filter 0.3s ease;
   margin-top: 110px;
+  max-height: calc(100vh - 110px - 80px);
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
 .header {
@@ -126,9 +141,6 @@ body {
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background: #222;
   color: #fff;
@@ -162,8 +174,15 @@ body {
 
 .footer-section h3 {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 10px 8px 5px;
   color: var(--gris-medio);
+}
+
+.footer-section p {
+  margin: 0 ;
+  font-size: 8rem 10rem;
+  color: white;
+  
 }
 
 .footer-section ul {
@@ -246,4 +265,35 @@ body {
 .submenu-content a:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    max-height: none;
+    padding-right: 0;
+    margin-top: 90px; /* Ajusta según el tamaño real del header en móvil */
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer-section {
+    min-width: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .sidebar {
+    width: 80vw;
+    min-width: 180px;
+    max-width: 300px;
+    padding-top: 80px;
+  }
+  .header {
+    padding: 15px 10px;
+    min-height: 60px;
+  }
+  .header-title {
+    font-size: 1.3em;
+  }
 }
