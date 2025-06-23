@@ -24,35 +24,7 @@
     <p>Cada sección está organizada para que puedas ubicar fácilmente la información correspondiente a cada módulo o unidad temática.</p>
     
   </div>
+  <script src="main.js"></script>
 </body>
-
 <?php include 'footer.php'; ?>
-
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const content = document.getElementById('main-content');
-      const overlay = document.getElementById('overlay');
-      const footer = document.querySelector('.footer');
-
-      sidebar.classList.toggle('open');
-      content.classList.toggle('dimmed');
-      footer.classList.toggle('dimmed');
-      overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
-    }
-
-    document.getElementById('overlay').addEventListener('click', () => {
-      document.getElementById('sidebar').classList.remove('open');
-      document.getElementById('main-content').classList.remove('dimmed');
-      document.querySelector('.footer').classList.remove('dimmed');
-      document.getElementById('overlay').style.display = 'none';
-    });
-
-    document.querySelectorAll('.submenu-btn').forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        this.parentElement.classList.toggle('open');
-      });
-    });
-  </script>
 </html>

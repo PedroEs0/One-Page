@@ -36,33 +36,7 @@
     <p>La memoria virtual permite ejecutar múltiples procesos grandes, aislar procesos y optimizar el uso de RAM, pero puede afectar el rendimiento si hay exceso de intercambio (thrashing).</p>
 </section>
 </div>
-  <?php include 'footer.php'; ?>
 </body>
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const content = document.getElementById('main-content');
-      const overlay = document.getElementById('overlay');
-      const footer = document.querySelector('.footer');
-
-      sidebar.classList.toggle('open');
-      content.classList.toggle('dimmed');
-      footer.classList.toggle('dimmed');
-      overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
-    }
-
-    document.getElementById('overlay').addEventListener('click', () => {
-      document.getElementById('sidebar').classList.remove('open');
-      document.getElementById('main-content').classList.remove('dimmed');
-      document.querySelector('.footer').classList.remove('dimmed');
-      document.getElementById('overlay').style.display = 'none';
-    });
-
-    document.querySelectorAll('.submenu-btn').forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        this.parentElement.classList.toggle('open');
-      });
-    });
-  </script>
+<script src="main.js"></script>
+<?php include 'footer.php'; ?>
 </html>

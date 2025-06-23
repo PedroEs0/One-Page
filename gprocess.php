@@ -65,34 +65,7 @@
       </ul>
     </section>
   </div>
-  <?php include 'footer.php'; ?>
-
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const content = document.getElementById('main-content');
-      const overlay = document.getElementById('overlay');
-      const footer = document.querySelector('.footer');
-
-      sidebar.classList.toggle('open');
-      content.classList.toggle('dimmed');
-      footer.classList.toggle('dimmed');
-      overlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
-    }
-
-    document.getElementById('overlay').addEventListener('click', () => {
-      document.getElementById('sidebar').classList.remove('open');
-      document.getElementById('main-content').classList.remove('dimmed');
-      document.querySelector('.footer').classList.remove('dimmed');
-      document.getElementById('overlay').style.display = 'none';
-    });
-
-    document.querySelectorAll('.submenu-btn').forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        this.parentElement.classList.toggle('open');
-      });
-    });
-  </script>
 </body>
+<script src="main.js"></script>
+<?php include 'footer.php'; ?>
 </html>
