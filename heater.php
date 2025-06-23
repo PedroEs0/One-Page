@@ -2,7 +2,7 @@
     <div class="header-left">
       <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
       <div>
-        <span class="header-title">One Page</span>
+        <span class="header-title">ONE PAGE</span>
       </div>
     </div>
     <img src="images/circuit.png" alt="Circuito" class="header-circuit">
