@@ -27,7 +27,10 @@
         <li><strong>Almacenamiento Terciario:</strong> como cintas magnéticas o nube, para respaldo y archivo.</li>
     </ul>
 </section>
-
+<a class="referencia" href="https://www.geniolandia.com/13132443/que-es-la-jerarquia-de-almacenamiento" target="_blank">Más información</a>
+<div class="image-container">
+    <img src="images/almace.webp" alt="Estructura de un sistema de archivos" class="responsive-image">
+</div>
 <section>
     <h2>2. Sistemas de Archivos</h2>
     <p>El sistema de archivos organiza y gestiona cómo se almacenan los datos en los dispositivos. Permite acceso ordenado mediante nombres, carpetas y permisos.</p>
@@ -41,7 +44,10 @@
     </ul>
     <p>Ejemplos: FAT32, NTFS, ext4, APFS.</p>
 </section>
-
+<a class="referencia" href="https://www.ionos.mx/digitalguide/servidores/know-how/sistemas-de-archivos/" target="_blank">Más información</a>
+<div class="image-container">
+    <img src="images/SISTEM-ARCH.jpg" alt="Sistemas de archivos" class="responsive-image">
+</div>
 <section>
     <h2>3. Administración de Espacio</h2>
     <p>Se refiere a cómo se asignan y liberan bloques de almacenamiento. Técnicas:</p>
@@ -52,6 +58,7 @@
     </ul>
     <p>También se maneja fragmentación, espacio libre, compactación y recolección de basura.</p>
 </section>
+<a class="referencia" href="https://www.wikiciencias.net/gestion-de-archivos-y-directorios-en-sistemas-operativos-asignacion-de-espacio-y-comparticion/" target="_blank">Más información</a>
 </div>
 </body>
 <script src="main.js"></script>

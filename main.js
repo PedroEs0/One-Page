@@ -16,24 +16,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Menú hamburguesa para móviles
+  // Menú hamburguesa solo para móvil
   var menuToggle = document.getElementById('menuToggle');
-  var navHorizontal = document.querySelector('.nav-horizontal');
-  if(menuToggle && navHorizontal) {
+  var navMobile = document.getElementById('navMobile');
+  if(menuToggle && navMobile) {
     menuToggle.addEventListener('click', function(e) {
       e.stopPropagation();
-      navHorizontal.classList.toggle('open');
+      navMobile.classList.toggle('open');
     });
-
     // Cierra el menú al hacer clic fuera de él
     document.addEventListener('click', function(e) {
       if (
-        navHorizontal.classList.contains('open') &&
-        !navHorizontal.contains(e.target) &&
+        navMobile.classList.contains('open') &&
+        !navMobile.contains(e.target) &&
         e.target !== menuToggle &&
         !menuToggle.contains(e.target)
       ) {
-        navHorizontal.classList.remove('open');
+        navMobile.classList.remove('open');
       }
     });
   }

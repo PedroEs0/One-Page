@@ -31,6 +31,10 @@
         <li><strong>Terminado (Terminated):</strong> El proceso ha finalizado su ejecución y el sistema operativo libera sus recursos.</li>
       </ul>
     </section>
+    <a class="referencia" href="https://infodigital.ciberlinea.net/sistemas/gestion-de-procesos-en-sistemas-operativos/" target="_blank">Más información</a>
+    <div class="img-ciclo-proceso">
+      <img src="images/ciclo_process.svg" alt="Ciclo de vida de un proceso">
+    </div>
     <section>
       <h2>3. Planificación de Procesos</h2>
       <p>La planificación de procesos es el mecanismo mediante el cual el sistema operativo decide qué proceso debe ejecutarse y cuándo, buscando eficiencia, equidad y respuesta rápida.</p>
@@ -50,6 +54,10 @@
         <li><strong>Planificación Multinivel:</strong> Usa varias colas de prioridad y políticas diferentes según el tipo de proceso.</li>
       </ul>
     </section>
+    <a class="referencia" href="https://www.ecured.cu/Planificaci%C3%B3n_de_procesos_en_un_sistema_operativo" target="_blank">Más información</a>
+    <div class="img-planificacion">
+      <img src="images/planificar.jpg" alt="Planificación de procesos">
+    </div>
     <section>
       <h2>5. Hilos de Ejecución</h2>
       <p>Un hilo es una unidad de ejecución dentro de un proceso. Los hilos comparten el mismo espacio de memoria y pueden ejecutarse en paralelo para mejorar el rendimiento.</p>
@@ -64,6 +72,10 @@
         <li>Muchos a muchos: Varios hilos de usuario se mapean a varios hilos de kernel.</li>
       </ul>
     </section>
+    <a class="referencia" href="https://adcod.com/es/que-son-los-hilos-en-el-sistema-operativo/" target="_blank">Más información</a>
+    <div class="img-hilos">
+    <img src="images/hilo.png" alt="Hilos de ejecución">
+    </div>
   </div>
 </body>
 <script src="main.js"></script>

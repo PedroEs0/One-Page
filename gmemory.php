@@ -19,6 +19,7 @@
     <p>El sistema operativo es el encargado de administrar esta memoria para que múltiples procesos puedan ejecutarse simultáneamente sin interferirse entre sí. Esto implica llevar un control estricto sobre qué porciones de memoria están ocupadas, cuáles están libres, y cómo se deben distribuir para que el sistema sea eficiente y estable. Cuando hay más procesos que memoria disponible, es necesario tomar decisiones sobre cuál se mantiene en memoria y cuál se reubica temporalmente en el disco (memoria virtual).</p>
     <p>Además, la gestión de la memoria principal involucra aspectos como la protección de espacios de memoria (para evitar que un proceso interfiera con otro), el uso compartido cuando es necesario (por ejemplo, bibliotecas de funciones compartidas), y la reubicación de procesos para mejorar el uso del espacio disponible.</p>
 </section>
+<a class="referencia" href="https://w3.ual.es/~rguirado/so/tema5.pdf" target="_blank">Más información</a>
 <section>
     <h2>2. Técnicas de Asignación de Memoria</h2>
     <p>La forma en que se asigna la memoria a los procesos influye directamente en el rendimiento del sistema. Existen diferentes técnicas, cada una con ventajas y desventajas:</p>
@@ -29,11 +30,16 @@
     </ul>
     <p>Las técnicas modernas utilizan paginación combinada con segmentación para un mejor manejo de la memoria en sistemas multitarea.</p>
 </section>
+<a class="referencia" href="https://www.guru99.com/es/os-memory-management.html" target="_blank">Más información</a>
+<div class="img-memoria">
+    <img src="images/asig-memory.gif" alt="Gestión de Memoria">
+</div>
 <section>
     <h2>3. Memoria Virtual</h2>
     <p>La memoria virtual permite que un sistema operativo ejecute procesos que requieren más memoria que la disponible físicamente. Se basa en una abstracción que da a cada proceso la impresión de tener un espacio de direcciones continuo y privado, aunque internamente esté fragmentado o parcialmente almacenado en disco.</p>
     <p>Esto se logra mediante el uso de espacio de intercambio (swap) en el disco duro. Cuando la RAM se llena, el sistema transfiere temporalmente datos no utilizados al disco. Cuando los datos intercambiados se vuelven a necesitar, se traen de vuelta a la RAM.</p>
     <p>La memoria virtual permite ejecutar múltiples procesos grandes, aislar procesos y optimizar el uso de RAM, pero puede afectar el rendimiento si hay exceso de intercambio (thrashing).</p>
+    <a class="referencia" href="https://sistemasyoperativos.com/2018/01/17/conceptos-basicos-gestion-memoria/" target="_blank">Más información</a>
 </section>
 </div>
 </body>
